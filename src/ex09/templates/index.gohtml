@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go</title>
+</head>
+<body>
+<form method="post">
+    <input type="email" name="username" placeholder="email">
+    <input type="text" name="firstname" placeholder="first name">
+    <input type="text" name="lastname" placeholder="last name">
+    <input type="submit">
+</form>
+{{if .First}}
+USERNAME {{.UserName}}<br>
+FIRST {{.First}}<br>
+LAST {{.Last}}<br>
+{{end}}
+<br>
+<h2>Go to <a href="/bar">the Bar</a></h2>
+</body>
+</html>
